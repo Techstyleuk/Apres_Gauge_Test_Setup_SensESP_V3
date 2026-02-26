@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 // Apres Gauge Test Setup using SensESP V3.
-// Software version 3.0.1 - 20260201
+// Software version 3.0.2 - 20260225
 // This software is designed to be used in combination with a video created for Youtube: *****
 // Included in this version:
 // 1.  INA219 voltage sensor which will be connected to either side of a gauge (temp, fuel, etc.), 
@@ -93,7 +93,7 @@ void setup() {
   SensESPAppBuilder builder;
   sensesp_app = (&builder)
                     // Set a custom hostname for the app.
-                    ->set_hostname("Apres-Gauge-test-setup-V3.0.1")
+                    ->set_hostname("Apres-Gauge-test-setup-V3.0.2")
                     // Optionally, hard-code the WiFi and Signal K server
                     // settings. This is normally not needed.
                     //->set_wifi_client("My WiFi SSID", "my_wifi_password")
@@ -182,5 +182,6 @@ ina219_TG_r2resistance
     loop();
   }
 }
+
 
 void loop() { event_loop()->tick(); }
